@@ -3,7 +3,7 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox>[quality23].mp4</extensiontextBox>
+  <extensiontextBox>[se6quality23].mp4</extensiontextBox>
   <filterparamBoxV> -vf "shanasubtitle=0"</filterparamBoxV>
   <filterparamBoxA> -af "volume=1.2"</filterparamBoxA>
   <encparamBox> -f mp4 

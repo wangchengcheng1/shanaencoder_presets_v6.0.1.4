@@ -3,7 +3,7 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox>[transTo1080pQuality23].mp4</extensiontextBox>
+  <extensiontextBox>[se6transTo1080pQuality23].mp4</extensiontextBox>
   <filterparamBoxV> -vf "scale=1920:1080:flags=bicubic,shanapad=Auto,setsar=1/1,shanasubtitle=1"</filterparamBoxV>
   <filterparamBoxA> -af "volume=1.2"</filterparamBoxA>
   <encparamBox> -f mp4  -timestamp now
