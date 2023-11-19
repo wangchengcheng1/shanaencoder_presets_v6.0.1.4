@@ -7,7 +7,7 @@
   <filterparamBoxV> -vf "shanasubtitle=1"</filterparamBoxV>
   <filterparamBoxA />
   <encparamBox> -f mp4  -timestamp now
- -c:v hevc_nvenc -preset hq -tune:v hq -cq 26 -qmin 21 -qmax 35 -profile:v main10 -level auto
+ -c:v hevc_nvenc -preset hq -tune:v hq -cq 26 -qmin 18 -qmax 35 -profile:v main10 -level auto
  -c:a copy
  -sn -map_metadata -1 -map_chapters -1 -shanakeyframe 10 -fps_mode cfr -assforcestyle</encparamBox>
   <x264optsBox />
