@@ -3,7 +3,7 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox />
+  <extensiontextBox>[se6].mp3</extensiontextBox>
   <filterparamBoxV />
   <filterparamBoxA />
   <encparamBox> -f mp3 -c:v none -c:a copy -sn</encparamBox>
