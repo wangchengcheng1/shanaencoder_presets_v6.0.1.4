@@ -14,3 +14,5 @@ ACHJ-007ACHJ007CF痴女shinodaYuuHhd800.com@achj00007hhb.[se6quality30]
 DASS-085DASS085CFM家父mizukawaSumireHhd800.com@dass00085hhb.[se6quality29]
 SDMU166SDMU-166CFL大山魔镜号破处低码率没关系仓多真央2(1sdmu00166)[SOD]マジックミラー号W生マ○コで童貞上原亜衣×倉多まお.[se6quality32] (1)
 231119改变了上下限发现上面三个大小都没有任何变化
+
+视频长度越长，同样的是32的质量，那么视频的平均比特率就越大。也就是说长视频尽量给数字高的质量，短视频尽量给数字低的质量。
