@@ -7,7 +7,7 @@
   <filterparamBoxV> -vf "shanasubtitle=1"</filterparamBoxV>
   <filterparamBoxA> -af "volume=1.2"</filterparamBoxA>
   <encparamBox> -f mp4  -timestamp now
- -c:v libx265 -crf 30.0 -qmin 18 -qmax 35 -preset veryfast -tune:v none
+ -c:v libx265 -crf 30.0 -qmin 18 -qmax 35 -preset veryfast -tune:v none -libx265main10
  -c:a libfdk_aac -b:a 192k
  -sn -map_metadata -1 -map_chapters -1 -shanakeyframe 10 -fps_mode cfr -assforcestyle</encparamBox>
   <x264optsBox />
