@@ -3,7 +3,7 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox>HMTV</extensiontextBox>
+  <extensiontextBox />
   <filterparamBoxV> -vf "shanasubtitle=0,deblock=1"</filterparamBoxV>
   <filterparamBoxA />
   <encparamBox> -f mp4 -movflags faststart 

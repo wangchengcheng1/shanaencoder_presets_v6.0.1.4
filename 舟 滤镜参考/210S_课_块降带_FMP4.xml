@@ -3,7 +3,7 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox>HMTV</extensiontextBox>
+  <extensiontextBox />
   <filterparamBoxV> -vf "unsharp=5:5:0.06:5:5:0.0,shanasubtitle=0,hqdn3d=4:4:4:3,deblock=1,deband=0.02"</filterparamBoxV>
   <filterparamBoxA />
   <encparamBox> -f mp4 -movflags faststart 

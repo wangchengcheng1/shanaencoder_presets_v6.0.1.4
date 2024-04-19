@@ -3,7 +3,7 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox>HMTV</extensiontextBox>
+  <extensiontextBox />
   <filterparamBoxV />
   <filterparamBoxA />
   <encparamBox> -f mp4 -movflags faststart -c:v h264_nvenc -c:a copy -sn -map_metadata -1 -map_chapters -1 -timestamp now -qp 0 -profile:v high -level auto -preset hq -tune:v hq -fps_mode cfr</encparamBox>
