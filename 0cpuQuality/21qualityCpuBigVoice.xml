@@ -3,9 +3,9 @@
 <Settings>
   <inputparamBox />
   <prefixtextBox />
-  <extensiontextBox>[se6qualityCpu21].mp4</extensiontextBox>
+  <extensiontextBox>[se6qualityCpu21bigVoice].mp4</extensiontextBox>
   <filterparamBoxV> -vf "shanasubtitle=1"</filterparamBoxV>
-  <filterparamBoxA> -af "volume=10"</filterparamBoxA>
+  <filterparamBoxA> -af "volume=1.5"</filterparamBoxA>
   <encparamBox> -f mp4  -timestamp now
  -c:v libx265 -crf 21.0 -qmin 15 -qmax 35 -preset veryfast -tune:v none
  -c:a libfdk_aac -b:a 192k
