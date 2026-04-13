@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--ShanaEncoder-->
 <Settings>
   <inputparamBox />
@@ -9,7 +9,7 @@
   <encparamBox> -f mp4 -movflags faststart 
  -c:v libx264 -preset veryfast -tune:v ssim -crf 20.0 -qmin 15 -qmax 25 -shanakeyframe 10 -profile:v high -level auto
  -c:a copy
- -sn -timestamp now -map_metadata -1 -map_chapters -1 -fps_mode cfr</encparamBox>
+ -sn -timestamp now -map_metadata -1 -map_chapters -1</encparamBox>
   <x264optsBox />
   <substyle>Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Default,,22,&amp;H00FFFFFF,&amp;H0000FFFF,&amp;H00000000,&amp;H80000000,-1,0,0,0,100,100,0,0,1,1,1,2,10,10,20,1</substyle>
