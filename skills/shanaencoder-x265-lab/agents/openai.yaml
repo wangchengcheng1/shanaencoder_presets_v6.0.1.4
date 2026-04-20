@@ -1,0 +1,3 @@
+interface:
+  display_name: "Scene X265 Lab / 场景调参实验室"
+  short_description: "Tune scene x265 presets by goal branches / 按目标分支调参"

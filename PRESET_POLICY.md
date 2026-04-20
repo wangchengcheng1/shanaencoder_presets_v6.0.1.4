@@ -2,7 +2,8 @@
 
 ## 生效日期
 
-- `2026-04-13`（本文件记录当前“最终版”维护策略）
+- `2026-04-13`（建立统一策略）
+- `2026-04-19`（新增 场景分支预设与技能化维护说明）
 
 ## 全局统一策略（适用于全仓 XML）
 
@@ -35,6 +36,14 @@
 - 参数：与 `0cpuQualityGpt5.3Codex` 一致（`-preset fast`、无 `qmin/qmax`）。
 - 文件命名：`*Fast.xml`（如 `24qualityCpuFast.xml`）。
 - 输出后缀：`[se6qualityCpuFastXX].mp4` 规则（如 `[se6qualityCpuFast24].mp4`）。
+- 场景分支：允许在本目录新增 `*Scene_*.xml` 作为场景化策略，不覆盖原 `*Fast.xml`。
+
+### `0cpuQualityGpt5.3CodexFast`（场景分支）
+
+- 角色：场景化实验组（A/B 对比用），保留基线文件不动。
+- 质量约束：按目标拆分为“自由 CRF / 均衡护栏 / 体积优先 / 细节优先 / 原音保留”。
+- 文件命名：`*Scene_*.xml`（如 `24qualityCpuFastScene_BalancedGuard.xml`）。
+- 记录要求：每个新增场景预设须注明“适用素材、目标分辨率、质量档位、关键滤镜开关”。
 
 ### `0cpuQualitySameAudio`
 
@@ -49,10 +58,12 @@
 
 1. 日常大量压制优先用 `0cpuQuality`（更快）。
 2. 收藏/长期存储优先用 `0cpuQualityGpt5.3Codex` 或 `0cpuQualityGpt5.3CodexFast`（更偏压缩效率）。
-3. 涉及大范围参数调整时，先复制新目录做 A/B，对比后再推广。
+3. 场景类素材优先从 `0cpuQualityGpt5.3CodexFast` 的 `*Scene_*.xml` 小样本 A/B 后再批量。
+4. 涉及大范围参数调整时，先复制新目录做 A/B，对比后再推广。
 
 ## 变更纪律
 
 1. 修改策略时，先更新本文件，再批量改 XML。
 2. 每次大改至少抽测一条动漫、一条真人、一条高运动素材。
 3. 若发现兼容问题，优先新增分支预设，不直接覆盖稳定预设。
+
