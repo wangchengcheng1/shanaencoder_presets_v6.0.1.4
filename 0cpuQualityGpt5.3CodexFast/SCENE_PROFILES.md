@@ -13,7 +13,7 @@
 
 | 文件名 | 适用素材 | 目标分辨率 | 质量档位 | 关键滤镜/参数 |
 |---|---|---|---|---|
-| `24qualityCpuFastScene_FreeCRF.xml` | 常规场景 | 720p/1080p | CRF 24（自由CRF） | `-vf "shanasubtitle=1"`，无 `qmin/qmax` |
+| `24qualityCpuFastScene_FreeCRF.xml` | 常规场景 | 720p/1080p | CRF 24 | `-vf "shanasubtitle=1"`，`-qmin 17 -qmax 36` |
 | `24qualityCpuFastScene_BalancedGuard.xml` | 常规场景（主推） | 720p/1080p | CRF 24（均衡） | `-vf "shanasubtitle=1"`，`-qmin 17 -qmax 36` |
 | `26qualityCpuFastScene_SizeFirstGuard.xml` | 高噪点/长时长场景 | 720p/1080p | CRF 26（体积优先） | `-vf "shanasubtitle=1"`，`-qmin 18 -qmax 40` |
 | `23qualityCpuFastScene_DetailGuard.xml` | 高运动/暗部细节场景 | 1080p | CRF 23（细节优先） | `-vf "shanasubtitle=1"`，`-qmin 16 -qmax 34` |
