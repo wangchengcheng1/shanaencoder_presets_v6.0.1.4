@@ -1,97 +1,44 @@
-# NVIDIA GPU Quality Encoding Presets
+# NVIDIA GPU Quality Presets
 
 ## Overview
 
-This folder contains quality-focused NVIDIA NVENC GPU encoding presets. These presets optimize for video quality while leveraging GPU acceleration for fast, efficient encoding.
+This folder contains NVIDIA GPU-accelerated quality presets using NVENC. Provides high-quality H.265 encoding with GPU acceleration for fast processing on NVIDIA hardware.
 
 ## Use Cases
 
-- GPU-accelerated quality encoding
-- Professional NVIDIA-based workflows
-- Balance of quality and GPU performance
-- Real-time GPU encoding with quality
-- NVIDIA-optimized production pipelines
+- High-quality encoding on NVIDIA GPU systems
+- Fast quality encoding with hardware acceleration
+- Content requiring professional quality with GPU speed
+- Streaming quality optimization on NVIDIA platforms
 
 ## Encoding Characteristics
 
-- **Acceleration**: NVIDIA NVENC GPU hardware
-- **Focus**: Quality optimization with GPU speed
-- **Codec Support**: H.264 and H.265 encoding
-- **Speed**: Fast GPU-accelerated processing
-- **Quality**: Optimized for best quality at GPU speeds
-- **Audio Codec**: AAC (libfdk_aac)
+- **Codec**: H.265/HEVC (hevc_nvenc)
+- **Bit Depth**: 10-bit
+- **Quality Level**: CQ 23
+- **Preset Speed**: hq (high quality)
+- **Profile**: main10
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4
 
-## Hardware Requirements
+## Special Features
 
-- NVIDIA GPU with NVENC capability:
-  - GeForce GTX 960 and newer
-  - RTX series for optimal performance
-  - Professional Tesla/Quadro cards
-  - Laptop NVIDIA discrete GPUs
+- **GPU Acceleration**: NVIDIA NVENC for fast encoding
+- **High Quality**: hq preset with CQ 23 for best results
+- **10-bit Profile**: Main10 for color depth support
+- **AAC Audio**: Professional audio codec at 192k
+- **Professional Focus**: Optimized for quality-conscious workflows
 
-## Features
+## Recommended For
 
-- **Quality Focus**: Optimized quality parameters
-- **GPU Acceleration**: Full NVIDIA NVENC utilization
-- **Multiple Codecs**: H.264 and H.265 support
-- **Professional Tuning**: Quality-first parameter selection
+- NVIDIA GPU systems with NVENC capability
+- Professional quality encoding workflows
+- High-quality streaming and distribution
+- Content where GPU acceleration is available
 
-## Performance Profile
+## Notes
 
-- Encoding speed: Very fast (GPU accelerated)
-- Quality level: High (quality-focused tuning)
-- File size: Good compression with quality priority
-- CPU usage: Minimal (GPU handles encoding)
-- Power efficiency: Offloads to dedicated GPU
-
-## NVENC Technology Benefits
-
-- Professional GPU-accelerated encoding
-- Minimal CPU overhead
-- Consistent quality across batch jobs
-- Multiple concurrent encoding streams
-- Server-grade reliability
-
-## When to Use
-
-- NVIDIA GPU systems (professional and consumer)
-- Quality-important workflows with time constraints
-- Server-side encoding with GPU resources
-- Batch processing on GPU-equipped servers
-- Professional video production with NVIDIA hardware
-
-## Use Case Examples
-
-- Video hosting platform encoding
-- Professional post-production with GPU
-- Broadcast streaming with GPU acceleration
-- Real-time streaming to multiple platforms
-- High-volume transcoding farms
-
-## Quality Optimization
-
-- Advanced NVENC parameter tuning
-- Quality-focused encoding settings
-- Professional artifact reduction
-- Optimized bitrate allocation
-
-## Supported Codecs
-
-- **H.264 (AVC)**: Universal compatibility
-- **H.265 (HEVC)**: Modern compression efficiency
-- **Bit Depths**: 8-bit and 10-bit variants
-
-## Comparison with CPU Encoding
-
-- **Advantage**: Much faster GPU acceleration
-- **Advantage**: Minimal CPU overhead
-- **Advantage**: Parallel encoding streams
-- **Limitation**: Slightly lower quality than x265
-- **Limitation**: Requires NVIDIA GPU
-
-## Professional Grade
-
-- Suitable for production use
-- Professional encoding quality
-- Reliable for 24/7 operation
-- Stream encoding capability
+- Requires NVIDIA GPU with HEVC NVENC support
+- Significantly faster than CPU-based encoding
+- CQ 23 with hq preset provides excellent quality
+- Main10 profile supports advanced color handling

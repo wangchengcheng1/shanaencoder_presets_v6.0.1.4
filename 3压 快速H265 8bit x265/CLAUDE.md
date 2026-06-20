@@ -1,103 +1,43 @@
-# Advanced Fast H.265 8-Bit x265 Encoding Presets
+# Fast Lower Quality H.265 8-bit x265 Encoding
 
 ## Overview
 
-This folder contains advanced fast H.265/HEVC encoding presets using x265 with 8-bit encoding depth. These presets combine advanced optimization with fast encoding speed for demanding real-time and batch workflows.
+This folder contains fast, lower-quality H.265/HEVC encoding presets with 8-bit color depth and aggressive bitrate constraints. Optimized for maximum file size reduction with quick encoding speed.
 
 ## Use Cases
 
-- Fast advanced video encoding
-- Real-time streaming with optimization
-- High-throughput batch processing
-- Production workflows with time constraints
-- Advanced speed/quality optimization
+- Aggressive file size reduction
+- Quick encoding with minimum quality requirements
+- Archival with tight storage constraints
+- Distribution where very small files are needed
 
 ## Encoding Characteristics
 
-- **Codec**: H.265/HEVC
+- **Codec**: H.265/HEVC (libx265)
 - **Bit Depth**: 8-bit
-- **Encoder**: x265 with advanced fast presets
-- **Speed**: Optimized for fast encoding
-- **Quality Level**: Advanced with speed priority
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Mode**: Variable bitrate (500k target, 1000k max, 2000k buffer)
+- **Preset Speed**: veryfast
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4 with faststart
 
-## Features
+## Special Features
 
-- **Speed Optimization**: Advanced fast encoding techniques
-- **Quality**: Good quality despite fast speed
-- **Advanced Tuning**: Professional optimization at speed
-- **Flexibility**: Still maintains advanced capability
+- **Aggressive Bitrate Constraints**: Very low bitrate targets for minimal files
+- **8-bit Encoding**: Reduces color depth for further size reduction
+- **Fast Processing**: veryfast preset for rapid encoding
+- **PSNR Tuning**: Optimized for PSNR metrics despite lower quality
+- **Deblock Filter**: Minimizes blocking artifacts
 
-## Performance Profile
+## Recommended For
 
-- Encoding speed: Fast (advanced fast presets)
-- Quality level: Good (better than standard fast)
-- File size: Efficient H.265 compression
-- CPU usage: High utilization for speed
+- Maximum file size reduction needed
+- Quick encoding with minimal quality
+- Tight storage or bandwidth constraints
+- Content where low quality is acceptable
 
-## Advanced Speed Techniques
+## Notes
 
-- Optimized motion estimation for speed
-- Advanced scene detection at fast speeds
-- Professional tuning for fast presets
-- Efficient bitrate allocation
-
-## When to Use
-
-- Real-time streaming workflows
-- High-volume batch processing
-- Production with time constraints
-- Advanced optimization with speed requirements
-- Professional fast transcoding
-
-## Use Case Examples
-
-- Live streaming encoding
-- Quick video format conversion
-- Real-time broadcast encoding
-- Batch processing farms
-- Production house fast encoding
-
-## Speed vs Quality Trade-off
-
-- **Advantage**: Fast encoding with advanced techniques
-- **Advantage**: Better quality than standard fast presets
-- **Limitation**: 8-bit vs 10-bit color precision
-- **Limitation**: Lower quality than slow advanced presets
-
-## Batch Processing
-
-- Scales well for parallel processing
-- Multi-threaded efficiency
-- Suitable for encoding farms
-- Good throughput for production
-
-## Professional Applications
-
-- Broadcast streaming
-- Live event encoding
-- Production house workflows
-- Premium service fast encoding
-- Real-time transcoding
-
-## Performance Scaling
-
-- Excellent multi-core scaling
-- Suitable for high-throughput servers
-- Parallel batch processing friendly
-- Network-efficient for distribution
-
-## Comparison Matrix
-
-| Aspect | vs Standard Fast | vs 10-bit Advanced | vs NVENC |
-|--------|-----------------|------------------|---------|
-| Speed | Faster with advanced tuning | Slower but better quality | Faster but lower quality |
-| Quality | Better | Lower | Lower |
-| Complexity | Advanced techniques | Higher quality | Simpler |
-
-## Technical Notes
-
-- 8-bit sufficient for most applications
-- Advanced techniques improve quality at fast speeds
-- Professional-grade fast encoding
-- Suitable for all modern video workflows
+- Extremely aggressive bitrate constraints (500k target, 1000k max)
+- 8-bit encoding reduces file size vs 10-bit variants
+- Produces smallest possible files with acceptable playability
+- Best for scenarios where size matters more than quality

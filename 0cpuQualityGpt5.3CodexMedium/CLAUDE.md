@@ -1,48 +1,41 @@
-# Medium Quality CPU x265 Encoding Presets (GPT 5.3 Codex)
+# Medium CPU Quality Presets with GPT 5.3 Codex
 
 ## Overview
 
-This folder contains medium-quality CPU-based x265 encoding presets optimized using GPT 5.3 Codex. These presets balance encoding speed with video quality for general-purpose video transcoding.
+This folder contains medium-speed CPU-based H.265 encoding presets with GPT 5.3 Codex optimization. Provides balanced quality and encoding speed, suitable for scenarios where both quality and reasonable processing time are important.
 
 ## Use Cases
 
-- General-purpose video transcoding
-- Balanced quality and encoding speed requirement
-- Archive and storage encoding
-- Standard definition and HD video encoding
-- Video distribution to multiple platforms
+- Standard video encoding with quality requirements
+- Content where encoding speed matters but quality is not sacrificed
+- Streaming and distribution scenarios
+- Long-form content processing with time considerations
 
 ## Encoding Characteristics
 
 - **Codec**: H.265/HEVC (libx265)
-- **Bit Depth**: 10-bit for better color gradation
-- **Mode**: CPU-based software encoding
-- **Quality Level**: Medium (CRF ~20-24 range)
-- **Preset**: Medium speed/quality balance
-- **Audio Codec**: AAC (libfdk_aac) at 192kbps
+- **Bit Depth**: 10-bit
+- **Quality Level**: CRF 20.0 (high quality)
+- **Preset Speed**: medium
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4 with faststart optimization
 
-## Preset Organization
+## Special Features
 
-Presets are numbered to indicate quality variations:
-- Lower numbers: Faster encoding, slightly lower quality
-- Higher numbers: Better quality, slower encoding
-- Variants include special configurations (BigVoice for content with heavy dialogue)
-
-## Special Variants
-
-- **BigVoice Variant**: Optimized audio handling for dialogue-heavy content
-- **Standard Variant**: General-purpose balanced encoding
-
-## Performance Profile
-
-- Encoding speed: Moderate (faster than high quality, slower than fast presets)
-- Quality level: Good visual quality suitable for most applications
-- CPU efficiency: Well-balanced for multi-threaded processing
-- File size: Reduced compared to original while maintaining quality
+- **Balanced Encoding**: Optimal compromise between speed and quality
+- **GPT 5.3 Codex Optimization**: Intelligent parameter tuning for encoder efficiency
+- **10-bit Color Depth**: Preserves color information effectively
+- **Optimized Container**: faststart for streaming compatibility
 
 ## Recommended For
 
-- Long-form content (TV shows, movies, lectures)
-- Archival storage with good quality preservation
-- Multi-platform distribution requiring broad compatibility
-- General transcoding workflows with balanced requirements
+- Professional video production workflows
+- Content distribution platforms
+- Standard quality archival with reasonable processing time
+- Streaming media files where quality matters
+
+## Notes
+
+- CRF 20.0 with medium preset offers better quality than fast presets with moderate speed increase
+- Medium preset uses more efficient encoding algorithms than fast, improving bitrate efficiency
+- Suitable as a default preset for most use cases

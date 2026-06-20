@@ -1,87 +1,43 @@
-# CPU Quality Transcoding to 1080p
+# CPU-Based Quality Transcoding to 1080p
 
 ## Overview
 
-This folder contains CPU-based quality encoding presets that transcode video to 1080p (Full HD) resolution. These presets combine video quality optimization with resolution scaling to 1080p.
+This folder contains CPU-based H.265 encoding presets that scale video to 1080p resolution while maintaining quality. Designed for upscaling or downscaling content to a consistent 1080p target.
 
 ## Use Cases
 
-- Downscaling 4K/2K to 1080p on CPU
-- 1080p distribution encoding
-- DVD/Blu-ray source upscaling to 1080p
-- Standard Full HD output encoding
-- Archive conversion to 1080p standard
+- Standardizing video to 1080p resolution
+- Upscaling lower resolution content
+- Downscaling higher resolution content to 1080p
+- Creating consistent 1080p output from mixed source resolutions
 
 ## Encoding Characteristics
 
-- **Resolution**: 1080p (1920x1080)
-- **Quality Level**: Optimized CPU quality presets
-- **Encoder**: x265 CPU-based
+- **Codec**: H.265/HEVC (libx265)
 - **Bit Depth**: 10-bit
-- **Scaling**: High-quality image scaling
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CRF 21.0
+- **Preset Speed**: veryfast
+- **Resolution**: 1080p (1920x1080) with bicubic scaling
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4
 
-## Resolution Details
+## Special Features
 
-- **Full HD**: 1920x1080 pixels
-- **Aspect Ratio**: Standard 16:9
-- **Frame Rate**: Maintained from source
-- **Interlacing**: Deinterlaced if necessary
+- **Bicubic Scaling**: High-quality scaling algorithm
+- **Auto Padding**: Maintains aspect ratio with padding as needed
+- **Quality Focus**: CRF 21.0 for good quality
+- **CPU-Based Processing**: Works on any system
 
-## Scaling Quality
+## Recommended For
 
-- **Scaling Algorithm**: High-quality filtering
-- **Detail Preservation**: Advanced scaling techniques
-- **Artifact Minimization**: Professional-grade scaling
-- **Quality**: Suitable for display on modern TVs
+- Standardizing video resolution to 1080p
+- Content requiring 1080p output format
+- Scaling mixed-resolution sources to consistent output
+- Workflows where 1080p is the target format
 
-## Use Case Examples
+## Notes
 
-- 4K to 1080p conversion
-- Downscaling for distribution
-- Streaming service standard resolution
-- Television broadcast from higher sources
-- Archive standardization
-
-## Performance Profile
-
-- Encoding speed: Moderate (CPU-bound with scaling)
-- Quality level: High (CPU quality + good scaling)
-- File size: Moderate (1080p H.265)
-- CPU usage: Full utilization
-
-## Benefits
-
-- **Standard Resolution**: Universal device support
-- **Quality**: CPU-based quality optimization
-- **Compatibility**: 1080p widely supported
-- **Future-proof**: High-quality 1080p encoding
-
-## When to Use
-
-- Converting 4K to 1080p for distribution
-- Creating standard-definition archive
-- Downscaling for streaming compatibility
-- Producing content for standard HD devices
-- Reducing file size from higher resolutions
-
-## Scaling Considerations
-
-- Source resolution affects quality
-- 4K to 1080p: Good downscaling (fewer artifacts)
-- 720p to 1080p: Upscaling (less ideal)
-- Multi-pass encoding: Can improve quality
-
-## Device Compatibility
-
-- Modern smart TVs: Full support
-- Laptops and desktops: Full support
-- Mobile devices: Support varies (may require adjustment)
-- Streaming platforms: Excellent support
-
-## Optimization for 1080p
-
-- Bitrate optimized for 1080p quality
-- Encoding preset tuned for this resolution
-- Scaling parameters optimized
-- Professional quality at standard resolution
+- Bicubic scaling provides good quality for scaling operations
+- Auto padding maintains original aspect ratio
+- CRF 21.0 provides good quality at 1080p
+- Audio is re-encoded to AAC at 192k

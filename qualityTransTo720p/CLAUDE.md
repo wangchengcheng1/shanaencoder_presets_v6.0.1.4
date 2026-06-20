@@ -1,97 +1,45 @@
-# Standard Quality Transcoding to 720p
+# NVIDIA GPU Quality Transcoding to 720p
 
 ## Overview
 
-This folder contains standard quality encoding presets that transcode video to 720p (HD) resolution. These presets provide balanced quality and efficient file size for mobile and streaming distribution.
+This folder contains NVIDIA GPU-accelerated H.265 presets that scale video to 720p resolution. Provides fast 720p transcoding using NVENC with focus on quality and efficiency.
 
 ## Use Cases
 
-- Standard 720p output encoding
-- Mobile device optimization
-- Streaming platform preparation
-- Bandwidth-efficient distribution
-- Downscaling with balanced quality
+- Fast 720p transcoding on NVIDIA systems
+- Downscaling high-resolution content to 720p
+- Mobile and streaming optimization to 720p
+- Quick GPU-accelerated 720p encoding
 
 ## Encoding Characteristics
 
-- **Resolution**: 720p (1280x720)
-- **Codec**: H.265/HEVC (libx265)
-- **Quality Level**: Balanced quality presets
+- **Codec**: H.265/HEVC (hevc_nvenc)
 - **Bit Depth**: 10-bit
-- **Scaling**: Optimized downscaling
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CQ 23
+- **Preset Speed**: hq (high quality)
+- **Resolution**: 720p (1280x720) with scaling filters
+- **Profile**: main10
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4
 
-## Resolution Details
+## Special Features
 
-- **HD Resolution**: 1280x720 pixels
-- **Aspect Ratio**: 16:9
-- **Size**: Optimized for mobile/streaming
-- **Frame Rate**: Maintained from source
+- **GPU Acceleration**: NVIDIA NVENC for fast processing
+- **720p Scaling**: Optimized downscaling to HD format
+- **Scaling Filters**: Quality-focused resolution conversion
+- **High Quality Preset**: hq with main10 profile
+- **AAC Audio**: Quality audio codec at 192k
 
-## Optimization for Streaming
+## Recommended For
 
-- **File Size**: Compact and efficient
-- **Bandwidth**: Lower streaming requirements
-- **Quality**: Suitable for screen size
-- **Compatibility**: Widely supported
+- NVIDIA GPU systems requiring 720p output
+- Mobile and streaming distribution at 720p
+- Fast 720p transcoding workflows
+- Bandwidth-optimized streaming
 
-## Use Case Examples
+## Notes
 
-- Mobile streaming optimization
-- Bandwidth-constrained distribution
-- Portable device encoding
-- Social media compatible format
-- Quick preview encoding
-
-## Performance Profile
-
-- Encoding speed: Fast
-- Quality level: Good for 720p
-- File size: Compact (30-40% of 1080p)
-- CPU usage: Efficient processing
-
-## Benefits
-
-- **Compact Size**: Small file sizes
-- **Speed**: Fast encoding
-- **Compatibility**: Universal 720p support
-- **Streaming**: Ideal for bandwidth
-- **Mobile**: Perfect for devices
-
-## Device Compatibility
-
-- Smartphones: Excellent support
-- Tablets: Full support
-- Laptops: Full support
-- TVs: Full support
-- Streaming platforms: Universal support
-
-## Bitrate Optimization
-
-- Optimized for 720p viewing
-- Efficient file size reduction
-- Quality suitable for screen size
-- Professional bitrate tuning
-
-## When to Use
-
-- Creating mobile-friendly versions
-- Streaming preparation
-- Bandwidth-conscious distribution
-- Portable device encoding
-- Quick encoding with good quality
-
-## Storage Efficiency
-
-- 50-60% smaller than 1080p files
-- Ideal for mobile storage
-- Efficient backup format
-- Streaming-friendly size
-
-## Professional Applications
-
-- Streaming services
-- Mobile app encoding
-- Social media optimization
-- Content distribution
-- Multi-resolution workflows
+- Requires NVIDIA GPU with HEVC NVENC support
+- Significantly faster than CPU-based 720p transcoding
+- CQ 23 provides good quality at 720p resolution
+- Good balance between quality and file size

@@ -1,56 +1,42 @@
-# H.264 8-Bit NVIDIA NVENC Encoding Presets
+# H.264 8-bit NVIDIA NVENC GPU Encoding
 
 ## Overview
 
-This folder contains H.264 video encoding presets using NVIDIA NVENC GPU acceleration with 8-bit encoding depth. These presets leverage GPU hardware for fast encoding with good compression.
+This folder contains H.264 encoding presets using NVIDIA GPU acceleration (NVENC). Provides fast encoding leveraging GPU hardware while maintaining compatibility with older devices that require H.264.
 
 ## Use Cases
 
-- Real-time video encoding with NVIDIA GPU
-- Fast H.264 compression for broad device compatibility
-- GPU-accelerated batch video processing
-- Systems with dedicated NVIDIA GPU hardware
-- Quick encoding prioritizing speed over maximum quality
+- Fast video encoding on NVIDIA GPU hardware
+- Content requiring H.264 codec for compatibility
+- Real-time or near-real-time encoding workflows
+- Archival with hardware acceleration capabilities
 
 ## Encoding Characteristics
 
-- **Codec**: H.264 (AVC)
+- **Codec**: H.264/AVC (h264_nvenc)
 - **Bit Depth**: 8-bit
-- **Acceleration**: NVIDIA NVENC GPU hardware encoding
-- **Speed**: Very fast GPU-accelerated encoding
-- **Compatibility**: Excellent device compatibility (H.264 is widely supported)
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CQ 23 (NVENC quality metric)
+- **Preset Speed**: hq (high quality)
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4 with faststart
 
-## Hardware Requirements
+## Special Features
 
-- NVIDIA GPU with NVENC capability:
-  - GeForce GTX/RTX series
-  - Tesla/Quadro professional cards
-  - Modern mobile GPUs
+- **GPU Acceleration**: NVIDIA NVENC for fast hardware encoding
+- **Video Enhancement**: Unsharp and deblock filters for improved visual quality
+- **Compatibility**: H.264 codec for universal device support
+- **Quality Focus**: High-quality NVENC preset
 
-## Benefits
+## Recommended For
 
-- **Speed**: Fast GPU-accelerated encoding (10-50x faster than CPU)
-- **Efficiency**: Offloads encoding to GPU, freeing CPU for other tasks
-- **Compatibility**: H.264 widely supported on all devices
-- **Quality**: Good balance of compression and quality
+- NVIDIA GPU systems with NVENC capability
+- Content requiring H.264 compatibility
+- Fast encoding workflows on compatible hardware
+- Streaming to devices that require H.264
 
-## Performance Profile
+## Notes
 
-- Encoding speed: Very fast (GPU accelerated)
-- Quality level: Good for general use
-- File size: Moderate compression (H.264 standard)
-- CPU usage: Minimal (GPU handles encoding)
-
-## Limitations
-
-- Requires NVIDIA GPU with NVENC support
-- Quality generally slightly lower than x264 software encoding
-- 8-bit depth limits color precision compared to 10-bit
-
-## Ideal Scenarios
-
-- Real-time encoding workflows
-- Batch processing with NVIDIA hardware
-- Server-side encoding with GPU resources
-- When GPU availability is priority over maximum quality
+- Requires NVIDIA GPU with NVENC support (GTX 950 or newer, RTX series)
+- Much faster than CPU-based encoding
+- CQ 23 provides good quality with hardware acceleration
+- Audio is passed through unchanged to minimize processing

@@ -1,90 +1,45 @@
-# Standard Quality Transcoding to 1080p
+# NVIDIA GPU Quality Transcoding to 1080p
 
 ## Overview
 
-This folder contains standard quality encoding presets that transcode video to 1080p (Full HD) resolution. These presets provide balanced quality and file size for 1080p output.
+This folder contains NVIDIA GPU-accelerated H.265 presets that scale video to 1080p resolution. Provides fast 1080p transcoding using NVENC hardware acceleration with quality focus.
 
 ## Use Cases
 
-- Standard 1080p output encoding
-- Format conversion to 1080p
-- Distribution encoding to standard HD
-- Downscaling with balanced quality
-- General-purpose 1080p transcoding
+- Fast 1080p transcoding on NVIDIA systems
+- Standardizing mixed resolutions to 1080p
+- GPU-accelerated resolution normalization
+- Quick quality 1080p encoding
 
 ## Encoding Characteristics
 
-- **Resolution**: 1080p (1920x1080)
-- **Codec**: H.265/HEVC (libx265)
-- **Quality Level**: Balanced quality presets
+- **Codec**: H.265/HEVC (hevc_nvenc)
 - **Bit Depth**: 10-bit
-- **Scaling**: High-quality downscaling
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CQ 23
+- **Preset Speed**: hq (high quality)
+- **Resolution**: 1080p (1920x1080) with bicubic scaling/padding
+- **Profile**: main10
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4
 
-## Resolution Details
+## Special Features
 
-- **Full HD**: 1920x1080 pixels
-- **Standard Format**: Widely supported
-- **Aspect Ratio**: 16:9
-- **Frame Rate**: Maintained from source
+- **GPU Acceleration**: NVIDIA NVENC for fast encoding
+- **1080p Scaling**: Bicubic scaling to 1080p resolution
+- **Auto Padding**: Maintains aspect ratio during scaling
+- **High Quality**: hq preset with main10 profile
+- **AAC Audio**: Quality audio encoding at 192k
 
-## Quality Balance
+## Recommended For
 
-- **Encoding Speed**: Moderate
-- **Visual Quality**: Good for 1080p display
-- **File Size**: Reasonable compression
-- **CPU Efficiency**: Well-balanced performance
+- NVIDIA GPU systems requiring 1080p output
+- Fast 1080p transcoding workflows
+- Standardizing video to 1080p resolution
+- Streaming to 1080p targets
 
-## Use Case Examples
+## Notes
 
-- Source material → 1080p standard encoding
-- Downscaling for distribution
-- Archive standardization
-- Streaming platform preparation
-- Standard HD output
-
-## Performance Profile
-
-- Encoding speed: Moderate
-- Quality level: Good (balanced presets)
-- File size: Moderate (1080p H.265)
-- CPU usage: Standard multi-threaded
-
-## Benefits
-
-- **Compatibility**: Universal 1080p support
-- **Quality**: Good visual quality
-- **File Size**: Reasonable compression
-- **Flexibility**: Balanced approach
-- **Professional**: Suitable for most workflows
-
-## Device Compatibility
-
-- Modern TVs: Full support
-- Computers: Excellent support
-- Mobile devices: Generally supported
-- Streaming platforms: Wide support
-
-## When to Use
-
-- General-purpose 1080p encoding
-- Standard distribution format
-- Archive standardization
-- Content without specific requirements
-- Balanced quality/size trade-off
-
-## Preset Organization
-
-Multiple presets for different use cases:
-- Standard 1080p output
-- Quality variations available
-- Optimized bitrate allocation
-- Professional encoding parameters
-
-## Professional Applications
-
-- Video hosting platforms
-- Streaming services
-- Content distribution
-- Archive creation
-- Professional workflows
+- Requires NVIDIA GPU with HEVC NVENC support
+- Much faster than CPU-based 1080p transcoding
+- CQ 23 with hq preset provides excellent quality
+- Bicubic scaling ensures good visual quality

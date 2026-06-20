@@ -1,74 +1,42 @@
-# H.265 10-Bit x265 CPU Encoding Presets
+# High-Quality H.265 10-bit x265 CPU Encoding
 
 ## Overview
 
-This folder contains H.265/HEVC video encoding presets using x265 CPU-based software encoder with 10-bit encoding depth. These presets provide maximum quality H.265 compression through the mature x265 encoder.
+This folder contains high-quality H.265/HEVC encoding presets using x265 software encoder with very low CRF values. Designed for scenarios where maximum video quality is required despite longer encoding times.
 
 ## Use Cases
 
-- Maximum quality H.265 encoding
-- Systems without GPU acceleration
-- Archival encoding with high quality
-- Professional video encoding workflows
-- Production environments requiring best quality
+- Archival with maximum video quality preservation
+- Professional video production requiring best quality
+- Long-form content where quality is paramount
+- High-quality distribution when file size allows
 
 ## Encoding Characteristics
 
-- **Codec**: H.265/HEVC
-- **Bit Depth**: 10-bit (superior color precision)
-- **Encoder**: x265 (CPU-based software)
-- **Quality Level**: Maximum (superior to GPU equivalents)
-- **Compatibility**: H.265-capable modern devices
-- **Audio Codec**: AAC (libfdk_aac)
+- **Codec**: H.265/HEVC (libx265)
+- **Bit Depth**: 10-bit
+- **Quality Level**: CRF 10.0 (very high quality)
+- **Preset Speed**: veryfast
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4 with faststart
 
-## Benefits
+## Special Features
 
-- **Quality**: Superior quality compared to hardware encoders
-- **Compression**: 50% better than H.264 at same quality
-- **Color Precision**: 10-bit for professional color work
-- **Flexibility**: Full control over encoding parameters
-- **Compatibility**: Works on any system with x265
+- **Very Low CRF**: CRF 10.0 prioritizes quality over file size
+- **SSIM Tuning**: Optimized for structural similarity metrics
+- **Enhanced Filtering**: Unsharp and deblock filters for visual improvement
+- **10-bit Color Depth**: Maximum color information preservation
 
-## Performance Profile
+## Recommended For
 
-- Encoding speed: Slower (CPU-bound, multi-threaded)
-- Quality level: Highest (excellent compression efficiency)
-- File size: Optimal compression with quality preservation
-- Color accuracy: 10-bit depth for precise gradation
+- Archival with quality preservation
+- Professional production requiring best output
+- Scenarios where file size is not a constraint
+- Long-term storage with maximum fidelity
 
-## 10-Bit Advantages
+## Notes
 
-- Better color gradation (4K colors per channel)
-- Reduced banding artifacts in smooth color transitions
-- Professional-grade color reproduction
-- Future-proof color handling
-
-## Quality Optimization
-
-x265 provides advanced quality features:
-- Psycho-visual optimization
-- Motion estimation refinement
-- Scene detection and adaptive encoding
-- Advanced rate control
-
-## When to Use
-
-- Archival encoding requiring maximum quality
-- Professional video production workflows
-- High-quality streaming distribution
-- 4K and HDR content preparation
-- Long-form content (movies, TV shows)
-
-## Performance Scaling
-
-- Excellent multi-core scaling
-- Suitable for 4K encoding with modern CPUs
-- Suitable for batch processing environments
-- Server-side encoding workflows
-
-## Comparison Notes
-
-- Better quality than NVENC or QSV equivalents
-- Slower than hardware acceleration
-- Superior to 8-bit x265 with better color handling
-- Professional-grade encoding results
+- CRF 10.0 significantly larger files than standard presets but vastly superior quality
+- Veryfast preset balances quality and reasonable encoding speed
+- Best-in-class quality for x265 encoding
+- SSIM-tuned for perceptual quality metrics

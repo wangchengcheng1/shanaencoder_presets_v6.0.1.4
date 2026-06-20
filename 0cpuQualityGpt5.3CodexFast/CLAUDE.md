@@ -1,35 +1,41 @@
-# Fast CPU x265 Encoding Presets (GPT 5.3 Codex)
+# Fast CPU Quality Presets with GPT 5.3 Codex
 
 ## Overview
 
-This folder contains fast CPU-based x265 encoding presets optimized using GPT 5.3 Codex intelligence. These presets prioritize encoding speed while maintaining reasonable video quality.
+This folder contains fast CPU-based H.265 encoding presets optimized with GPT 5.3 Codex parameter tuning. Designed for scenarios where encoding speed is prioritized while maintaining good quality.
 
 ## Use Cases
 
-- Real-time video processing workflows
-- Quick transcoding without strict quality requirements
-- Batch processing with time constraints
-- Fast preview/intermediate encoding
+- Quick batch processing of video files
+- Real-time or near-real-time encoding workflows
+- Content requiring fast turnaround with acceptable quality trade-offs
+- Archive/storage scenarios with moderate quality requirements
 
 ## Encoding Characteristics
 
 - **Codec**: H.265/HEVC (libx265)
 - **Bit Depth**: 10-bit
-- **Mode**: CPU-based software encoding
-- **Speed Optimization**: Preset set to "fast" or "faster"
-- **Quality**: Optimized for speed over maximum quality
+- **Quality Level**: CRF 20.0 (high quality)
+- **Preset Speed**: fast
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4 with faststart optimization
 
-## Preset Selection
+## Special Features
 
-Presets in this folder are numbered to represent different quality/speed trade-offs. Lower numbers offer faster encoding with lower quality; higher numbers provide better quality with slower encoding.
+- **GPT 5.3 Codex Optimization**: Intelligent parameter tuning for optimal quality-to-speed ratio
+- **Fast Encoding**: Targets quick processing without sacrificing perceptual quality
+- **Subtitle Support**: Built-in subtitle handling capabilities
+- **Optimized Container**: faststart enabled for improved streaming performance
 
-## Performance Notes
+## Recommended For
 
-- Encoding speed: High (fastest among quality presets)
-- Quality level: Good balance for fast processing
-- CPU usage: Full utilization recommended for optimal performance
-- Audio codec: AAC (libfdk_aac) at standard bitrates
+- Quick video conversions and re-encoding tasks
+- Batch processing with time constraints
+- Content where encoding speed is a priority
+- Streaming-optimized distribution files
 
-## Integration
+## Notes
 
-Use these presets when you need to quickly encode video content where encoding speed is more important than achieving maximum visual quality.
+- CRF 20.0 provides better quality than standard presets while maintaining reasonable encoding speed
+- Audio is re-encoded to AAC at 192k bitrate for compatibility and quality balance
+- 10-bit encoding ensures good color depth without excessive file size

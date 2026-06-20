@@ -1,48 +1,41 @@
-# CPU Quality Presets with GPT 5.3 Codex Optimization
+# Standard CPU Quality with GPT 5.3 Codex Optimization
 
 ## Overview
 
-This folder contains CPU-based quality encoding presets enhanced with GPT 5.3 Codex intelligence for optimized encoding parameter selection and quality tuning.
+This folder contains standard quality CPU-based H.265 encoding presets with GPT 5.3 Codex intelligent parameter optimization. Combines balanced encoding speed with optimized parameter tuning for better quality-to-bitrate efficiency.
 
 ## Use Cases
 
-- AI-optimized video transcoding
-- Intelligent quality parameter selection
-- Content-aware encoding optimization
-- Enhanced quality with AI-driven parameter tuning
+- Standard video encoding with optimized parameters
+- Content requiring good quality without excessive processing time
+- Workflows where intelligent parameter tuning is beneficial
+- Professional video production with moderate speed requirements
 
 ## Encoding Characteristics
 
 - **Codec**: H.265/HEVC (libx265)
 - **Bit Depth**: 10-bit
-- **Mode**: CPU-based software encoding
-- **Optimization**: GPT 5.3 Codex-driven parameter tuning
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CRF 20.0
+- **Preset Speed**: fast
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4 with faststart optimization
 
-## Codex Optimization Benefits
+## Special Features
 
-- Intelligent quality metrics optimization
-- Adaptive parameter selection based on content analysis
-- Enhanced visual quality per equivalent file size
-- Optimized CRF values for different content types
+- **GPT 5.3 Codex Optimization**: Intelligent parameter tuning for encoder optimization
+- **Balanced Performance**: Good quality-to-speed ratio
+- **Adaptive Parameters**: Automatically adjusted for optimal encoding
+- **Professional Quality**: 10-bit color depth with CRF 20.0
 
-## Features
+## Recommended For
 
-- Machine learning-assisted preset optimization
-- Improved quality-to-bitrate efficiency
-- Better handling of specific content types
-- Reduced encoding artifacts
+- Professional video encoding workflows
+- Content where parameter optimization matters
+- Standard quality production with quality focus
+- Streaming and distribution scenarios
 
-## Performance
+## Notes
 
-- Encoding speed: Comparable to standard CPU presets
-- Quality improvement: Better visual quality through intelligent tuning
-- File size: More efficient compression at same quality level
-- Compatibility: Full H.265 device compatibility maintained
-
-## Best For
-
-- High-quality video archival
-- Content where quality optimization is critical
-- Professional transcoding workflows
-- Scenarios requiring balanced quality and file size
+- GPT 5.3 Codex tuning adapts parameters for better encoding efficiency
+- Fast preset balances quality and processing speed
+- Represents optimized standard quality approach

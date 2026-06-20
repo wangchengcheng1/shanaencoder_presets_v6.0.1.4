@@ -1,92 +1,45 @@
-# Quality Transcoding to 1080p with Audio Stream Copy
+# NVIDIA GPU Quality Transcoding to 1080p with Audio Passthrough
 
 ## Overview
 
-This folder contains quality encoding presets that transcode video to 1080p resolution while preserving the original audio stream through stream copy.
+This folder contains NVIDIA GPU-accelerated H.265 presets that scale video to 1080p while preserving original audio. Combines GPU speed with 1080p standardization and audio preservation.
 
 ## Use Cases
 
-- 1080p encoding with original audio preservation
-- Downscaling with audio stream copy
-- Fast 1080p conversion keeping audio quality
-- Batch 1080p processing with audio preservation
-- Efficient encoding combining both optimizations
+- Fast 1080p transcoding on NVIDIA systems with audio preservation
+- Standardizing mixed resolutions to 1080p with original audio
+- Professional workflows requiring audio integrity
+- GPU-accelerated 1080p normalization
 
 ## Encoding Characteristics
 
-- **Resolution**: 1080p (1920x1080)
-- **Video Codec**: H.265/HEVC (libx265)
-- **Video Quality**: Optimized quality presets
-- **Bit Depth**: 10-bit video
-- **Audio Mode**: Stream copy (no re-encoding)
-- **Container**: MP4
+- **Codec**: H.265/HEVC (hevc_nvenc)
+- **Bit Depth**: 10-bit
+- **Quality Level**: CQ 23
+- **Preset Speed**: hq (high quality)
+- **Resolution**: 1080p (1920x1080) with scaling/padding
+- **Profile**: main10
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4
 
-## Triple Optimization
+## Special Features
 
-- **Resolution**: Downscaled to 1080p
-- **Video Quality**: Quality-optimized H.265
-- **Audio**: Original preserved through copy
-- **Result**: Efficient balanced encoding
+- **GPU Acceleration**: NVIDIA NVENC for fast processing
+- **1080p Scaling**: Bicubic scaling to consistent resolution
+- **Audio Preservation**: Original audio passed through unchanged
+- **Auto Padding**: Maintains aspect ratio during scaling
+- **High Quality**: hq preset with main10 profile
 
-## Benefits
+## Recommended For
 
-- **1080p Standard**: Universal device compatibility
-- **Video Quality**: High-quality H.265 encoding
-- **Audio Quality**: Original audio perfect preservation
-- **Speed**: Fast encoding (no audio processing)
-- **Efficiency**: Professional balanced approach
+- NVIDIA GPU systems requiring 1080p output
+- Professional workflows with audio preservation needs
+- Fast 1080p transcoding with quality focus
+- Streaming to 1080p targets with original audio
 
-## Performance Profile
+## Notes
 
-- Encoding speed: Fast (1080p + no audio re-encode)
-- Quality: High video + perfect audio
-- File size: 1080p optimized moderate size
-- CPU usage: Efficient video-focused
-
-## When to Use
-
-- Downscaling high-res to 1080p with audio preservation
-- Creating distribution versions with audio intact
-- Batch processing multiple resolutions
-- Streaming preparation with original audio
-- Archive standardization workflow
-
-## Use Case Examples
-
-- 4K movie → 1080p distribution + original audio
-- 2K source → 1080p with original soundtrack
-- Multi-format encoding (1080p variant)
-- Professional content preparation
-- Broadcast-standard with original audio
-
-## Resolution & Audio Balance
-
-- **1080p Optimization**: Standard HD quality
-- **Scaling**: Professional image downscaling
-- **Audio Original**: Lossless preservation
-- **Format**: MP4 container compatibility
-
-## Processing Efficiency
-
-- Video: Full optimization for 1080p
-- Audio: No processing needed (direct copy)
-- Overall: Efficient combined workflow
-- Result: Professional quality output
-
-## Comparison Matrix
-
-| Feature | vs 720p | vs 1080p Full | vs Stream Copy |
-|---------|---------|--------------|----------------|
-| Resolution | Higher | Same | Same |
-| Video Quality | Better | Same | Same |
-| Audio Quality | Same | Same | Same |
-| File Size | Larger | Same | Smaller |
-| Encoding Time | Slower | Same | Much faster |
-
-## Professional Use
-
-- Video streaming services
-- Archive standardization
-- Professional distribution
-- Multi-platform encoding
-- Content delivery optimization
+- Requires NVIDIA GPU with HEVC NVENC support
+- Significantly faster than CPU-based 1080p transcoding
+- Scaling/padding filters maintain aspect ratio
+- Audio passthrough ensures original quality preservation

@@ -1,73 +1,42 @@
-# Fast H.265 8-Bit x265 CPU Encoding Presets
+# Fast H.265 8-bit x265 CPU Encoding
 
 ## Overview
 
-This folder contains fast H.265/HEVC encoding presets using x265 CPU encoder with 8-bit encoding depth. These presets prioritize encoding speed while maintaining reasonable quality through x265 optimization.
+This folder contains fast H.265/HEVC encoding presets using x265 with 8-bit color depth. Optimized for quick encoding while maintaining decent quality and reduced file sizes compared to 10-bit variants.
 
 ## Use Cases
 
-- Fast H.265 encoding on CPU systems
-- Quick transcoding with good compression
-- Real-time video processing workflows
-- Batch encoding with time constraints
-- Systems prioritizing speed over maximum quality
+- Quick video encoding with reasonable quality
+- Content distribution where speed matters
+- Batch processing with moderate quality requirements
+- Storage scenarios where file size and speed balance is needed
 
 ## Encoding Characteristics
 
-- **Codec**: H.265/HEVC
+- **Codec**: H.265/HEVC (libx265)
 - **Bit Depth**: 8-bit
-- **Encoder**: x265 (CPU-based)
-- **Speed**: Optimized for fast encoding
-- **Quality Level**: Good balance of speed and quality
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CRF 19.0
+- **Preset Speed**: veryfast
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4 with faststart
 
-## Features
+## Special Features
 
-- **Speed Optimization**: Preset set to "fast" or "faster" modes
-- **Compression**: H.265 efficiency (40-50% smaller than H.264)
-- **Quality**: Good visual quality at faster encoding speeds
-- **Flexibility**: Still has full x265 capability
+- **8-bit Encoding**: Reduces file size compared to 10-bit
+- **PSNR Tuning**: Optimized for PSNR quality metrics
+- **Fast Processing**: veryfast preset for quick encoding
+- **Deblock Filter**: Reduces blocking artifacts
 
-## Performance Profile
+## Recommended For
 
-- Encoding speed: Fast (much faster than quality-focused x265)
-- Quality level: Good (suitable for most applications)
-- File size: Effective H.265 compression
-- CPU usage: High utilization for speed
+- Quick video encoding workflows
+- Content distribution with speed priority
+- Storage with balanced quality-to-size ratio
+- Batch processing with moderate quality needs
 
-## Trade-offs vs Quality x265
+## Notes
 
-- **Advantage**: Significantly faster encoding
-- **Advantage**: Good compression efficiency
-- **Limitation**: 8-bit instead of 10-bit (slightly less color precision)
-- **Limitation**: Lower quality than "medium/slow" x265 presets
-
-## When to Use
-
-- Fast transcoding requirements
-- Encoding speed more important than maximum quality
-- Intermediate encoding (re-encoding later)
-- Quick preview encoding
-- Batch processing with time constraints
-
-## Performance Scaling
-
-- Scales well with multi-core CPUs
-- Good for parallel batch encoding
-- Suitable for real-time workflows
-- Efficient multi-threaded performance
-
-## Use Case Examples
-
-- Quick video format conversion
-- Preview encoding before final quality pass
-- Real-time streaming encoding
-- Intermediate transcoding steps
-- Fast backup encoding
-
-## Comparison
-
-- Faster than 10-bit quality x265
-- Slower than NVENC or QSV
-- Better quality than hardware accelerators
-- 8-bit vs 10-bit trade-off for speed
+- 8-bit encoding reduces file size vs 10-bit variants
+- CRF 19.0 with veryfast preset provides good speed/quality balance
+- Smaller files than 10-bit presets while maintaining good quality
+- Good for streaming and distribution scenarios

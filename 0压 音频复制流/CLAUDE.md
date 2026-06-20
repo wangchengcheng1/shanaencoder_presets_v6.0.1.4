@@ -1,49 +1,41 @@
-# Audio Stream Copy Presets
+# Audio Stream Copy (Lossless Audio Extraction)
 
 ## Overview
 
-This folder contains presets for audio stream copy operations. These presets preserve the original audio stream without re-encoding while allowing video processing.
+This folder contains lossless audio passthrough presets for audio-only processing. Extracts audio streams without any re-encoding, preserving original audio quality completely.
 
 ## Use Cases
 
-- Preserve original audio quality while changing video
-- Extract audio with video re-encoding
-- Avoid audio transcoding overhead
-- Maintain high-fidelity audio tracks
-- Fast audio/video processing
+- Audio extraction from video files
+- Audio-only file format conversion
+- Preserving original audio while separating from video
+- Creating audio-only distributions without transcoding
 
 ## Encoding Characteristics
 
-- **Audio Codec**: Stream copy (no re-encoding)
-- **Quality**: Lossless audio preservation
-- **Speed**: Fastest audio processing (copy only)
-- **Compatibility**: Depends on container support
+- **Format**: Audio-only (no video)
+- **Audio Codec**: copy (no re-encoding)
+- **Quality Level**: Lossless - identical to source
+- **Processing**: Audio extraction and format conversion only
+- **Container Format**: M4A
 
-## Benefits
+## Special Features
 
-- **Quality**: Perfect audio preservation
-- **Speed**: Avoids audio transcoding computational cost
-- **Fidelity**: Original audio format and quality maintained
-- **Simplicity**: No audio codec selection needed
+- **Lossless Audio**: Original audio completely preserved
+- **No Transcoding**: Audio stream copied without any re-encoding
+- **Audio Extraction**: Separates audio from video files
+- **Maximum Speed**: Minimal processing overhead
 
-## Important Considerations
+## Recommended For
 
-- Output container must support source audio codec
-- Cannot modify audio properties (sample rate, channels, etc.)
-- Audio filter operations are NOT possible
-- Video can be re-encoded independently
+- Extracting audio from video files
+- Creating audio-only distributions
+- Audio format conversion without quality loss
+- Archival of audio tracks with complete fidelity
 
-## Common Scenarios
+## Notes
 
-- Video re-encoding with original audio preservation
-- Format conversion keeping original audio
-- Audio codec compatibility changes via container conversion
-- Multi-audio track management
-- Batch processing with consistent audio requirements
-
-## Performance
-
-- Audio processing time: Negligible (copy operation only)
-- CPU usage: Minimal
-- Audio quality: 100% preservation (lossless)
-- File size: No audio compression applied
+- Audio is extracted unchanged from source file
+- No quality loss or re-encoding whatsoever
+- Fastest possible audio extraction method
+- Ideal when audio preservation is critical

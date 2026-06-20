@@ -1,60 +1,42 @@
-# H.264 8-Bit x264 CPU Encoding Presets
+# H.264 8-bit x264 CPU Encoding
 
 ## Overview
 
-This folder contains H.264 video encoding presets using the x264 CPU-based software encoder with 8-bit depth. These presets provide excellent compression and quality through mature software encoding.
+This folder contains H.264 encoding presets using x264 software encoder. Designed for H.264 compatibility with CPU-based processing, suitable for systems without GPU acceleration or when H.264 is required.
 
 ## Use Cases
 
-- High-quality H.264 encoding on CPU systems
-- Systems without GPU acceleration
-- Archival encoding requiring good quality
-- Professional video encoding with strict quality requirements
-- Broad compatibility encoding
+- H.264 encoding on CPU-based systems
+- Content requiring H.264 codec for compatibility
+- Archival with older codec standards
+- Streaming to devices that require H.264 support
 
 ## Encoding Characteristics
 
-- **Codec**: H.264 (AVC)
+- **Codec**: H.264/AVC (libx264)
 - **Bit Depth**: 8-bit
-- **Encoder**: x264 (CPU-based software)
-- **Quality Level**: High (superior to NVENC equivalent)
-- **Compatibility**: Universal H.264 device support
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CRF 19.0
+- **Preset Speed**: veryfast
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4 with faststart
 
-## Benefits
+## Special Features
 
-- **Quality**: Better quality than GPU NVENC at same bitrate
-- **Compatibility**: H.264 supported by essentially all devices
-- **Maturity**: x264 is mature, stable, battle-tested encoder
-- **Flexibility**: Full control over encoding parameters
-- **Efficiency**: Good compression-to-quality ratio
+- **SSIM Tuning**: Optimized for perceptual quality using SSIM metrics
+- **Enhanced Filtering**: Unsharp and deblock filters for visual improvement
+- **CPU-Based**: Works on any system with CPU (no GPU required)
+- **Compatibility**: H.264 codec for universal device support
 
-## Performance Profile
+## Recommended For
 
-- Encoding speed: Moderate (CPU-bound, slower than NVENC)
-- Quality level: High (excellent visual quality)
-- File size: Good compression with quality preservation
-- CPU usage: Full utilization (multi-threaded)
+- Systems without GPU acceleration
+- Content requiring H.264 codec
+- Compatibility with older devices and platforms
+- CPU-only encoding workflows
 
-## Quality Optimization
+## Notes
 
-x264 presets provide excellent quality optimization through:
-- Psycho-visual tuning
-- Advanced motion estimation
-- Scene detection
-- Adaptive quantization
-
-## When to Use
-
-- Maximum quality H.264 encoding
-- CPU-only systems (no GPU)
-- Archival with compatibility requirements
-- Professional workflows prioritizing quality over speed
-- Encoding where broad device compatibility is critical
-
-## Performance Notes
-
-- Multi-threaded for modern multi-core CPUs
-- Scales well with additional CPU cores
-- Memory usage: Moderate
-- Suitable for real-time and batch encoding
+- CRF 19.0 provides good quality with veryfast preset
+- Slower than NVENC but works on any system
+- H.264 codec ensures compatibility with older devices
+- SSIM-tuned parameters optimize for perceived quality

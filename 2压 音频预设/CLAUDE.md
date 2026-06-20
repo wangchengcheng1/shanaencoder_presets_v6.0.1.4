@@ -1,74 +1,40 @@
-# Audio Encoding Presets
+# Audio Compression Presets
 
 ## Overview
 
-This folder contains audio-only encoding presets for audio compression and format conversion. These presets focus on audio transcoding with various quality and codec options.
+This folder contains audio-only encoding presets for various audio formats and codecs. Used for audio extraction, format conversion, and audio-specific encoding tasks.
 
 ## Use Cases
 
-- Audio extraction and re-encoding
-- Audio format conversion
-- Audio quality optimization
-- Dialogue and speech optimization
-- Multi-track audio processing
-
-## Preset Types
-
-Various audio presets for different purposes:
-- **Standard audio**: General-purpose audio encoding
-- **High quality audio**: Lossless or near-lossless audio
-- **Dialogue/Speech**: Optimized for voice content
-- **Music**: Optimized for music content
-- **Streaming**: Optimized for low-bitrate streaming
-
-## Audio Codecs Supported
-
-- **AAC (libfdk_aac)**: High-quality AAC encoding
-- **MP3**: Standard MP3 format
-- **FLAC**: Lossless compression
-- **Opus**: Modern low-bitrate codec
-- **PCM**: Uncompressed audio
+- Audio format conversion and re-encoding
+- Audio extraction from video files
+- Audio codec optimization
+- Standalone audio file processing
 
 ## Encoding Characteristics
 
-- **Focus**: Audio-only transcoding
-- **Quality Levels**: Various bitrates and codecs
-- **Container**: MP4, MKV, or audio-only formats
-- **Metadata**: Preserve or optimize audio metadata
+- **Format**: Audio-only (no video)
+- **Codec**: AC3 and other audio codecs
+- **Processing**: Audio codec conversion and optimization
+- **Container Format**: AC3 and other audio containers
 
-## Common Audio Presets
+## Special Features
 
-- **192 kbps AAC**: Transparent quality (general purpose)
-- **128 kbps AAC**: Good quality, smaller files (streaming)
-- **320 kbps MP3**: High-quality MP3
-- **Lossless FLAC**: Archive-quality audio
-- **Opus Low**: Low-bitrate streaming
+- **Audio-Only Processing**: Dedicated audio encoding
+- **Format Flexibility**: Supports multiple audio formats and codecs
+- **No Video Processing**: Optimized for audio-only workflows
+- **Codec Support**: Various audio codec options
 
-## Performance
+## Recommended For
 
-- Encoding speed: Very fast (audio-only)
-- CPU usage: Minimal compared to video
-- File size: Depends on bitrate and codec
-- Quality: Excellent with appropriate bitrate
+- Audio file conversion and format transformation
+- Audio extraction from video sources
+- Standalone audio encoding tasks
+- Audio codec optimization
 
-## When to Use
+## Notes
 
-- Extracting audio from video files
-- Audio format conversion
-- Optimizing audio track quality
-- Batch audio processing
-- Audio/video separation workflows
-
-## Audio Quality Guidelines
-
-- **Transparent**: 192+ kbps AAC, 320 kbps MP3
-- **High Quality**: 128+ kbps AAC, 192+ kbps MP3
-- **Streaming**: 96-128 kbps (speech/dialogue)
-- **Lossless**: FLAC, WAV, uncompressed
-
-## Professional Notes
-
-- Preserve original audio for archival
-- Use appropriate bitrate for content type
-- Consider playback device audio codec support
-- Plan for multiple audio track encoding
+- Presets include various audio codecs suitable for different use cases
+- No video processing overhead when using these presets
+- Ideal for audio-focused workflows
+- Supports different audio formats and quality levels

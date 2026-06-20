@@ -1,44 +1,41 @@
-# Standard Quality CPU-Based Encoding Presets
+# Standard CPU Quality Presets
 
 ## Overview
 
-This folder contains standard quality CPU-based encoding presets providing balanced quality and encoding performance for general video transcoding tasks.
+This folder contains standard quality CPU-based H.265 encoding presets. Provides a good balance of quality and performance suitable for general-purpose video encoding tasks.
 
 ## Use Cases
 
-- Standard video transcoding
-- Quality preservation with reasonable file size reduction
-- CPU-only encoding environments (no GPU acceleration)
-- Multi-platform video distribution
-- Archive storage with acceptable quality
+- Standard video encoding workflows
+- General-purpose quality conversions
+- Content distribution with good quality standards
+- Default preset for most encoding scenarios
 
 ## Encoding Characteristics
 
 - **Codec**: H.265/HEVC (libx265)
 - **Bit Depth**: 10-bit
-- **Mode**: CPU-based software encoding (no GPU)
-- **Quality Level**: Balanced quality/compression ratio
-- **Audio Codec**: AAC (libfdk_aac)
+- **Quality Level**: CRF 20.0
+- **Preset Speed**: veryfast
+- **Audio Codec**: libfdk_aac at 192k
+- **Container Format**: MP4 with faststart optimization
 
-## Performance Profile
+## Special Features
 
-- Encoding speed: Standard (moderate CPU usage)
-- Quality level: Good visual fidelity for most applications
-- File size reduction: Effective compression maintaining quality
-- Compatibility: Broad device support via H.265
+- **Veryfast Preset**: Quick encoding without compromising quality significantly
+- **10-bit Support**: Preserves color depth for better visual fidelity
+- **AAC Audio**: High-quality audio codec at 192k bitrate
+- **Streaming Optimized**: faststart for efficient streaming playback
 
-## Presets Organization
+## Recommended For
 
-Presets are numbered to indicate quality variations from fast to highest quality within the standard tier.
+- General video encoding tasks
+- Batch processing with moderate time constraints
+- Standard quality archival
+- Content distribution platforms
 
-## Suitable For
+## Notes
 
-- General-purpose video transcoding
-- Video archival with quality requirements
-- Multi-platform distribution workflows
-- Content where GPU acceleration is unavailable
-- Long-form content (movies, TV shows, lectures)
-
-## Optimization
-
-These presets are optimized for modern multi-core CPUs to achieve good encoding throughput without requiring specialized GPU hardware.
+- Veryfast preset provides reasonable encoding speed while maintaining CRF 20.0 quality
+- Represents a balanced middle ground for most use cases
+- Good quality-to-performance ratio for diverse content types

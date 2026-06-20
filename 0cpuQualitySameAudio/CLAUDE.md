@@ -1,41 +1,41 @@
-# Quality Presets with Audio Stream Copy
+# Fast CPU Quality with Audio Passthrough
 
 ## Overview
 
-This folder contains quality encoding presets where the video stream is re-encoded but the audio stream is copied without re-encoding (stream copy mode). This preserves original audio quality while optimizing video compression.
+This folder contains fast CPU-based H.265 encoding presets that preserve the original audio stream. Optimized for quick encoding while maintaining original audio quality without re-encoding.
 
 ## Use Cases
 
-- Preserve original audio quality while re-encoding video
-- Reduce encoding time by skipping audio transcoding
-- Maintain high-fidelity audio tracks (lossless audio)
-- Batch processing with consistent audio requirements
+- Fast encoding with audio preservation
+- Content where quick processing is needed but audio quality must not be compromised
+- Standard batch processing with audio integrity requirements
+- Quick archival without audio transcoding
 
 ## Encoding Characteristics
 
-- **Video Codec**: H.265/HEVC (libx265)
-- **Bit Depth**: 10-bit video encoding
-- **Audio Mode**: Stream copy (no re-encoding)
-- **Quality Level**: CPU-optimized quality presets
-- **Container**: MP4 format
+- **Codec**: H.265/HEVC (libx265)
+- **Bit Depth**: 10-bit
+- **Quality Level**: CRF 20.0
+- **Preset Speed**: fast
+- **Audio Codec**: copy (stream passthrough)
+- **Container Format**: MP4 with faststart optimization
 
-## Benefits
+## Special Features
 
-- **Faster Encoding**: Audio stream copy is significantly faster than transcoding
-- **Audio Quality**: Original audio quality preserved perfectly
-- **File Size**: Optimized video with no audio transcoding overhead
-- **Compatibility**: Maintains original audio codec compatibility
+- **Fast Encoding**: Prioritizes quick processing
+- **Audio Preservation**: Original audio stream copied unchanged
+- **Reduced Processing Time**: Less work required due to audio passthrough
+- **Quality Maintained**: 10-bit video with CRF 20.0
 
-## Considerations
+## Recommended For
 
-- All audio tracks must be compatible with MP4 container
-- Audio codec must be supported by target devices
-- Cannot modify audio properties (sample rate, channels, etc.)
+- Quick video conversions with audio integrity
+- Batch processing where speed and audio quality matter equally
+- Content distribution with specific audio requirements
+- Fast re-encoding when audio must not be modified
 
-## When to Use
+## Notes
 
-Use these presets when your original audio is already in the desired format and you want to focus on video quality optimization without re-encoding audio.
-
-## Quality Levels
-
-Available presets provide different quality/speed trade-offs while keeping audio unchanged.
+- Faster than medium preset while maintaining audio fidelity
+- Reduced overall file size and processing time due to audio passthrough
+- Good balance between speed and quality when audio preservation is needed
